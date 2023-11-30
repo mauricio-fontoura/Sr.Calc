@@ -1,0 +1,83 @@
+.wrapper
+{
+    display: grid;
+    grid-template-rows: 1fr 30px 2fr;
+    height: 100vh;
+    background-color: var(--primaryColor);   
+}
+/*AREA VISOR */
+.screen-container
+{
+    background-color: #e4f2f8;
+    margin: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    border-radius: 10px ;
+    padding-inline: 10px;
+    box-shadow: 0px 0px 5px 1px #fffffff6;
+}
+.numeric-display{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.calc-screen
+{ 
+    font-size: 25px;
+    font-weight: 900; 
+}
+.resultScreen
+{
+    color: #02c8d394;
+    font-size: 25px;
+    font-weight: 900; 
+}
+/*AREA BOTÕES NUMERICOS/OPERADORES CONFIGURAÇÃO */
+.btn-style
+{
+    background:linear-gradient(320deg,#bebebe48,#ffffff0c ) ;
+    color: var(--scale-gray-2);
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    box-shadow:  1px 2px 1px 1px var(--scale-gray-2);
+    cursor: pointer;
+    border-radius: 2px ;
+}
+
+/*AREA BOTOES ESPECIAIS CONFIGURAÇÃO */
+.btnEqual
+{
+    grid-row: span 2;
+    font-size: 30px;
+    background-color: var(--element-btnEqual);
+}
+.op{
+    background-color: var(--element-btnOp);
+}
+.espContents{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-inline: 8px;
+}
+.btnAC{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: ridge 1px rgb(90, 90, 90);
+}
+.styleNumber{
+    grid-column: span 2;
+}
+
+/*AREA BOTOES NUMERICOS*/
+.buttons-container
+{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 0.5em;
+    padding-block: 0.5em;
+    padding-inline: 0.5em;
+}
